@@ -1,17 +1,22 @@
-import { Image, Text, View } from "react-native";
+import { Image, Text, TouchableOpacity, View } from "react-native";
 import styles from "./style";
 import { Ionicons, MaterialCommunityIcons  } from '@expo/vector-icons';
 import GitHubUser from "../../interfaces/GitHubUser";
+import { NavigationProp, ParamListBase, useNavigation } from "@react-navigation/native";
 
 interface UserDataProps {
     dataUser: GitHubUser;
 }
 
 export default function InfoUser({dataUser}: UserDataProps){
+    const { navigate } = useNavigation<NavigationProp<ParamListBase>>();
+    function navigateToProfile () {
+        navigate('Perfil')
+    }
     return (
-        <View style={styles.conteiner}>
+        <TouchableOpacity style={styles.conteiner}  onPress={navigateToProfile} >
             <View style={styles.profile}>
-                <Image 
+                <Image
                     style={styles.imageUser}
                     source={{
                         uri: `${dataUser?.avatar_url}`,
@@ -29,6 +34,6 @@ export default function InfoUser({dataUser}: UserDataProps){
                     <Text style={styles.textInfo}>{dataUser.login}</Text>
                 </View>
             </View>
-        </View>
+        </TouchableOpacity>
     )
 }
