@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     },
     iconSearch: {
      position:"absolute",
-     right: 8,
+     right: 14,
      top: 7
     }
 })

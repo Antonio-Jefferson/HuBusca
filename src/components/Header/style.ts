@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
     height: 50,
-    paddingHorizontal: 5
+    paddingHorizontal: 20
    },
    logo: {
     flexDirection: "row",
