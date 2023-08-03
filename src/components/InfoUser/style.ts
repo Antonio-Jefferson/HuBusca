@@ -29,14 +29,15 @@ const styles = StyleSheet.create({
       color: '#716B6B'
     },
     conteinerInfo:{
+      width: '100%',
       flexDirection: 'row',
       alignItems: 'center',
-      gap: 20
+      justifyContent:'space-between'
     },
     infos: {
       flexDirection: 'row',
       alignItems: 'center',
-      gap: 2
+      gap: 5
     },
    textInfo: {
      color: '#716B6B',
