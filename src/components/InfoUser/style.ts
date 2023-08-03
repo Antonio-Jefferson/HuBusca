@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
       flexDirection: 'column',
       justifyContent: 'space-between',
       alignItems: 'center',
-      width: 304,
+      width: 350,
       height: 275,
       padding: 12,
       backgroundColor: '#1E1E1E',
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
       flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'center',
-      gap: 5
+      gap: 3
     },
     textName: {
       fontSize: 20,
@@ -31,12 +31,12 @@ const styles = StyleSheet.create({
     conteinerInfo:{
       flexDirection: 'row',
       alignItems: 'center',
-      gap: 50
+      gap: 20
     },
     infos: {
       flexDirection: 'row',
       alignItems: 'center',
-      gap: 5
+      gap: 2
     },
    textInfo: {
      color: '#716B6B',
