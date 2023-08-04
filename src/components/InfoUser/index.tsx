@@ -11,12 +11,13 @@ interface UserDataProps {
 export default function InfoUser({dataUser}: UserDataProps){
     const { navigate } = useNavigation<NavigationProp<ParamListBase>>();
     function navigateToProfile () {
-        navigate('Perfil')
+        navigate('Perfil', {username: dataUser.login})
     }
     return (
         <TouchableOpacity style={styles.conteiner}  onPress={navigateToProfile} >
             <View style={styles.profile}>
                 <Image
+                    alt="Imagem de perfil"
                     style={styles.imageUser}
                     source={{
                         uri: `${dataUser?.avatar_url}`,

@@ -4,6 +4,5 @@ interface GitHubUser {
     name: string | null;
     location: string | null;
   }
-  
   export default GitHubUser;
   
