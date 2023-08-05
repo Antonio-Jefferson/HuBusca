@@ -2,18 +2,20 @@ import { FlatList, Image, ScrollView, Text, View } from "react-native";
 import * as S from './style';
 import { MaterialCommunityIcons, Octicons, Ionicons, Feather, MaterialIcons } from '@expo/vector-icons';
 import { SafeAreaView } from "react-native-safe-area-context";
-import CardRepor from "../../components/CardRepor";
+import CardRepor from "../../Components/CardRepor";
 import { useEffect, useState } from "react";
-import getInfoProfile from "../../server/getInfoProfile";
-import getRepositories from "../../server/getRepositories";
-import IInfoUserProfile from "../../interfaces/InfoUserProfile";
-import IInfoRepos from "../../interfaces/InfoRepos";
+import getInfoProfile from "../../Server/getInfoProfile";
+import getRepositories from "../../Server/getRepositories";
+import IInfoUserProfile from "../../Interfaces/InfoUserProfile";
+import IInfoRepos from "../../Interfaces/InfoRepos";
+import { useSelector } from "react-redux";
+import { RootState } from "../../Store";
 
 export default function Profile() {
  const [infoUserData, setInfoUserData] = useState<IInfoUserProfile>()
  const [infoReposData, setInfoReposData] = useState<IInfoRepos[]>()
- const username = 'Antonio-Jefferson'
- 
+ const  username = useSelector((state: RootState) => state.userReducer.username)
+  console.log({username})
   useEffect(() => {
    const getInfos = async () => {
       const dataUser = await getInfoProfile(username)

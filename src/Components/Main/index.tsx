@@ -3,7 +3,7 @@ import SearchUser from "../Search";
 import styles from "./style";
 import InfoUser from "../InfoUser";
 import { useState } from "react";
-import GitHubUser from "../../interfaces/GitHubUser";
+import GitHubUser from "../../Interfaces/GitHubUser";
 
 export default function Main(){
   const [dataUser, setDataUser] = useState<GitHubUser | undefined>(undefined)

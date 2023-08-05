@@ -1,7 +1,7 @@
 import { Image, Text, TouchableOpacity, View } from "react-native";
 import styles from "./style";
 import { Ionicons, MaterialCommunityIcons  } from '@expo/vector-icons';
-import GitHubUser from "../../interfaces/GitHubUser";
+import GitHubUser from "../../Interfaces/GitHubUser";
 import { NavigationProp, ParamListBase, useNavigation } from "@react-navigation/native";
 
 interface UserDataProps {

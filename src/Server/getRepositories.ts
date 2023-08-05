@@ -1,7 +1,7 @@
 import axios from 'axios';
-import IInfoRepos from '../interfaces/InfoRepos';
+import IInfoRepos from '../Interfaces/InfoRepos';
 
-const getRepositories = async (username: string) => {
+const getRepositories = async (username: string | undefined) => {
     try {
         const response = await axios.get(`https://api.github.com/users/${username}/repos`);
         const dataUserInfo: IInfoRepos[] = response.data.map((repo: any) => ({

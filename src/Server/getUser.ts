@@ -1,16 +1,14 @@
 import axios from 'axios';
-import IInfoUserProfile from '../interfaces/InfoUserProfile';
-const getInfoProfile = async (username: string) => {
+import GitHubUser from '../Interfaces/GitHubUser';
+
+const getUser = async (username: string) => {
     try {
         const response = await axios.get(`https://api.github.com/users/${username}`);
-        const dataUserInfo: IInfoUserProfile  = {
+        const dataUserInfo: GitHubUser  = {
             name: response.data.name,
             avatar_url: response.data.avatar_url,
             login: response.data.login,
-            location: response.data.location,
-            id: response.data.id,
-            followers: response.data.followers,
-            quanty_repos: response.data.public_repos
+            location: response.data.location
         };
         return dataUserInfo;
     } catch (error) {
@@ -18,4 +16,4 @@ const getInfoProfile = async (username: string) => {
     }
 };
 
-export default getInfoProfile;
+export default getUser;
