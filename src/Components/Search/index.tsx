@@ -1,5 +1,5 @@
 import { TextInput, TouchableOpacity, View } from "react-native";
-import styles from "./style";
+import * as S from "./style";
 import { FontAwesome5 } from '@expo/vector-icons';
 import { Dispatch, SetStateAction, useState } from "react";
 import getUser from "../../Server/getUser";
@@ -30,19 +30,17 @@ export default function SearchUser({ setDataUser }: DataUserProps) {
     }
 
     return (
-        <View style={styles.conteiner}>
-            <TextInput
-                style={styles.searchInput}
+        <S.Container>
+            <S.SearchInput
                 placeholder="Pesquisar usuário..."
                 onChangeText={text => setUsername(text)} 
                 value={username} 
             />
-            <TouchableOpacity
-                onPress={getUserInfo}
-                style={styles.iconSearch}
-            >
-                <FontAwesome5 name="search" size={24} color="#716B6B" />
-            </TouchableOpacity>
-        </View>
+            <S.IconSearch>
+                <TouchableOpacity onPress={getUserInfo}>
+                    <FontAwesome5 name="search" size={24} color="#716B6B" />
+                </TouchableOpacity>
+            </S.IconSearch>
+        </S.Container>
     );
 }

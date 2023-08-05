@@ -1,11 +1,9 @@
-import { StyleSheet } from 'react-native';
+import styled from 'styled-components/native';
 
-const styles = StyleSheet.create({
-    container: {
-      height: '100%',
-      backgroundColor: '#fff',
-      paddingTop: 35
-    },
-})
+const Container = styled.View`
+  height: 100%;
+  background-color: #fff;
+  padding-top: 35px;
+`;
 
-export default styles
+export default Container;

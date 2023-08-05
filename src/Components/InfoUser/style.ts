@@ -1,50 +1,43 @@
-import { StyleSheet } from "react-native";
+import styled from 'styled-components/native';
 
-const styles = StyleSheet.create({
-    conteiner: {
-      flexDirection: 'column',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      width: 350,
-      height: 275,
-      padding: 12,
-      backgroundColor: '#1E1E1E',
-      borderRadius: 8,
-    },
-    imageUser: {
-      width: 150,
-      height: 150,
-      borderRadius: 100,
-      backgroundColor: '#D9D9D9'
-    },
-    profile: {
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      gap: 3
-    },
-    textName: {
-      fontSize: 20,
-      fontWeight:"800",
-      color: '#716B6B'
-    },
-    conteinerInfo:{
-      width: '100%',
-      flexDirection: 'row',
-      alignItems: 'center',
-      justifyContent:'space-between',
-      paddingHorizontal: 14
-    },
-    infos: {
-      flexDirection: 'row',
-      alignItems: 'center',
-      gap: 5
-    },
-   textInfo: {
-     color: '#716B6B',
-     fontSize: 17,
-     fontWeight: '400'
-   }
-})
+export const Container = styled.View`
+  width: 350px;
+  height: 275px;
+  padding: 12px;
+  background-color: #1E1E1E;
+  border-radius: 8px;
+`;
 
-export default styles
+export const Profile = styled.View`
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+`;
+
+export const TextName = styled.Text`
+  font-size: 20px;
+  font-weight: 800;
+  color: #716B6B;
+  margin-bottom: 45px;
+`;
+
+export const ContainerInfo = styled.View`
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 14px;
+`;
+
+export const Infos = styled.View`
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+`;
+
+export const TextInfo = styled.Text`
+  color: #716B6B;
+  font-size: 17px;
+  font-weight: 400;
+`;

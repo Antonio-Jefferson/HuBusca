@@ -1,26 +1,21 @@
-import { StyleSheet } from "react-native";
+import styled from 'styled-components/native';
 
-const styles = StyleSheet.create({
-   conteiner: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    height: 50,
-    paddingHorizontal: 20
-   },
-   logo: {
-    flexDirection: "row",
-    justifyContent: "center",
-    alignItems: "center",
-    gap: 3 
-   },
-   textLogo: {
-      fontSize: 28,
-      fontWeight: "bold"
-   },
-   menu: {
+export const Container = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0px 20px;
+`;
 
-   }
-})
+export const LogoContainer = styled.View`
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+`;
 
-export default styles
+export const TextLogo = styled.Text`
+  font-size: 28px;
+  font-weight: bold;
+`;

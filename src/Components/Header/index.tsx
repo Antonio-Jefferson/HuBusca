@@ -1,5 +1,5 @@
-import { Text, TouchableOpacity, View } from "react-native"
-import styles from "./style"
+import { TouchableOpacity, View } from "react-native"
+import * as S from './style'
 import { Octicons, AntDesign } from '@expo/vector-icons';
 import { useDispatch } from "react-redux";
 import { setOpenMenuAction } from "../../Store/Reducers/GlobalReducer";
@@ -20,14 +20,14 @@ export default function Header() {
   }
 
     return (
-        <View style={styles.conteiner}>
-           <View style={styles.logo}>
+        <S.Container>
+           <S. LogoContainer >
              <View><Octicons name="mark-github" size={36} color="black" /></View>
-             <View><Text style={styles.textLogo}>HUBusca</Text></View>
-           </View>
+             <View><S.TextLogo>HUBusca</S.TextLogo></View>
+           </S.LogoContainer >
            <TouchableOpacity onPress={OpenMenu}>
               <AntDesign name="menufold" size={32} color="black" />
            </TouchableOpacity>
-        </View>
+        </S.Container>
     )
 }
