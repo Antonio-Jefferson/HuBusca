@@ -2,7 +2,7 @@ import { FlatList, Image, ScrollView, Text, View } from "react-native";
 import * as S from './style';
 import { MaterialCommunityIcons, Octicons, Ionicons, Feather, MaterialIcons } from '@expo/vector-icons';
 import { SafeAreaView } from "react-native-safe-area-context";
-import CardRepor from "../../Components/CardRepor";
+import CardRepor from "../../Components/CardRepo";
 import { useEffect, useState } from "react";
 import getInfoProfile from "../../Server/getInfoProfile";
 import getRepositories from "../../Server/getRepositories";
@@ -15,7 +15,7 @@ export default function Profile() {
  const [infoUserData, setInfoUserData] = useState<IInfoUserProfile>()
  const [infoReposData, setInfoReposData] = useState<IInfoRepos[]>()
  const  username = useSelector((state: RootState) => state.userReducer.username)
-  console.log({username})
+  
   useEffect(() => {
    const getInfos = async () => {
       const dataUser = await getInfoProfile(username)

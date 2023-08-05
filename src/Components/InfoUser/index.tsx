@@ -11,7 +11,7 @@ interface UserDataProps {
 export default function InfoUser({dataUser}: UserDataProps){
     const { navigate } = useNavigation<NavigationProp<ParamListBase>>();
     function navigateToProfile () {
-        navigate('Perfil', {username: dataUser.login})
+        navigate('Perfil')
     }
     return (
         <TouchableOpacity style={styles.conteiner}  onPress={navigateToProfile} >
