@@ -20,3 +20,7 @@ export const TitleSession = styled.Text`
     font-size: 20px;
     font-weight: 800;
 `
+
+export const Scroll = styled.View`
+    height: 80%;
+`

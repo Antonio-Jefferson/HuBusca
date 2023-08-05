@@ -1,6 +1,6 @@
 interface GitHubUser {
     login: string | undefined;
-    avatar_url: string;
+    avatar_url: string | null;
     name: string | null;
     location: string | null;
   }

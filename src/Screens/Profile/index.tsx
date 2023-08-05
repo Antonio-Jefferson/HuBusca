@@ -46,11 +46,11 @@ export default function Profile() {
                         </S.Info>
                         <S.Info>
                             <Feather name="users" size={24} color="black" />
-                            <S.Text>{infoUserData?.followers} falowers</S.Text>
+                            <S.Text>{infoUserData?.followers} Seguidores</S.Text>
                         </S.Info>
                         <S.Info>
                             <MaterialIcons name="my-library-books" size={24} color="black" />
-                            <S.Text>{infoUserData?.quanty_repos} respositórios</S.Text>
+                            <S.Text>{infoUserData?.quanty_repos} Repositórios</S.Text>
                         </S.Info>
                     </S.ListInfoUser>
                 </View>

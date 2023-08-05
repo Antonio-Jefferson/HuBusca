@@ -6,7 +6,7 @@ import getUser from "../../Server/getUser";
 import GitHubUser from "../../Interfaces/GitHubUser";
 import { useDispatch } from "react-redux";
 import { setUserAction } from "../../Store/Reducers/userReducer";
-
+import { addUserToLocalStorage } from "../../utils/localStorage";
 interface UserStore {
     username?: string;
 }
@@ -22,10 +22,10 @@ export default function SearchUser({ setDataUser }: DataUserProps) {
     const getUserInfo = async () => {
        const data = await getUser(username)
        setDataUser(data)
+       await addUserToLocalStorage(data)
        const userStoreData: UserStore = {
         username: data?.login,
       };
-    
       dispatch(setUserAction(userStoreData));
     }
 
