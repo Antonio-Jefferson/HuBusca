@@ -1,6 +1,5 @@
-import { TouchableOpacity, View } from "react-native";
+import { TouchableOpacity, View, Linking } from "react-native";
 import * as S from "./style";
-import { Linking } from 'react-native';
 
 type ItemProps = {
     title: string;
@@ -22,15 +21,18 @@ export default function Cardrepor(item: ItemProps ) {
             <S.CardView>
                 <S.Header>
                     <S.Title>{item?.title}</S.Title>
-                    <S.TextBold>Iniciado: <S.TextDate>{item?.init}</S.TextDate></S.TextBold>
-                    <S.TextBold>Último push: <S.TextDate>{item?.last_push}</S.TextDate></S.TextBold>
+                    <S.ViewDate>
+                        <S.TextBold>Iniciado: <S.TextDate>{item?.init}</S.TextDate></S.TextBold>
+                        <S.TextBold>Último push: <S.TextDate>{item?.last_push}</S.TextDate></S.TextBold>
+                    </S.ViewDate>
                 </S.Header>
                 <View>
                     <S.TextDescription>{item?.description}</S.TextDescription>
                 </View>
-                <View>
+                <S.ViewStack>
+                    <S.Cicle></S.Cicle>
                     <S.Stack>{item?.stack}</S.Stack>
-                </View>
+                </S.ViewStack>
             </S.CardView>
         </TouchableOpacity>     
     )

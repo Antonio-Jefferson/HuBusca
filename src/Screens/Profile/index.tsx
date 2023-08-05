@@ -23,7 +23,6 @@ export default function Profile() {
 
       const dataRepos = await getRepositories(username)
       setInfoReposData(dataRepos)
-      console.log(dataRepos)
    }
 
    getInfos()
