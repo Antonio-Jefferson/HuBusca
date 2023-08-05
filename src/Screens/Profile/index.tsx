@@ -23,6 +23,7 @@ export default function Profile() {
 
       const dataRepos = await getRepositories(username)
       setInfoReposData(dataRepos)
+      console.log(dataRepos)
    }
 
    getInfos()
@@ -86,6 +87,7 @@ export default function Profile() {
                            last_push={item.last_push}
                            description={item.description}
                            stack={item.stack}
+                           username={username}
                          />
                        )}
                        keyExtractor={item => item.id}
