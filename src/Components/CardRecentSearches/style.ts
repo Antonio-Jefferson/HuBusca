@@ -21,7 +21,7 @@ export const ImageUser = styled.View`
 export const ConteinerInfo = styled.View`
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
 `
 export const TextName = styled.Text`
     color: #474747;

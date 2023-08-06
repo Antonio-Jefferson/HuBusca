@@ -2,7 +2,7 @@
   "expo": {
     "name": "HuBusca",
     "slug": "HuBusca",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -21,10 +21,14 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.clicksof.hubusca",
+      "versionCode": 2
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "extra": {
+      "eas": {
+        "projectId": "c08f00a4-8df0-4e9b-a498-b9b84235d8e7"
+      }
     }
   }
 }
