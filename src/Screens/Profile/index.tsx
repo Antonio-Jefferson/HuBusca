@@ -56,8 +56,8 @@ export default function Profile() {
                 </View>
                 <S.ConteinerImage>
                     <Image 
-                        height={165}
-                        width={165}
+                        height={180}
+                        width={180}
                         borderRadius={100}
                         alt="Imagem de perfil"
                         source={{
@@ -71,7 +71,7 @@ export default function Profile() {
                 <View>
                     <S.TextView>
                         <S.line></S.line>
-                        <S.TextH2>Repositórios públicos</S.TextH2>
+                        <S.TextH2>REPOSITÓRIOS</S.TextH2>
                     </S.TextView>
                 </View>
                 <S.Scroll>

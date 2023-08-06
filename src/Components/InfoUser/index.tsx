@@ -30,11 +30,11 @@ export default function InfoUser({dataUser}: UserDataProps){
                 </S.Profile>
                 <S.ContainerInfo>
                     <S.Infos>
-                        <Ionicons name="ios-location-sharp" size={24} color="#716B6B" />
+                        <Ionicons name="ios-location-sharp" size={24} color="#d9d9d9" />
                         <S.TextInfo>{dataUser.location}</S.TextInfo>
                     </S.Infos>
                     <S.Infos>
-                        <MaterialCommunityIcons name="face-man-outline" size={24} color="#716B6B" />
+                        <MaterialCommunityIcons name="face-man-outline" size={24} color="#d9d9d9" />
                         <S.TextInfo>{dataUser.login}</S.TextInfo>
                     </S.Infos>
                 </S.ContainerInfo>

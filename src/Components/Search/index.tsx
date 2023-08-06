@@ -1,4 +1,4 @@
-import { TextInput, TouchableOpacity, View } from "react-native";
+import { TouchableOpacity} from "react-native";
 import * as S from "./style";
 import { FontAwesome5 } from '@expo/vector-icons';
 import { Dispatch, SetStateAction, useState } from "react";

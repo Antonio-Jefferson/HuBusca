@@ -5,7 +5,7 @@ export const ConteinerMenu = styled.View`
     width: 80%;
     height: 100%;
     padding: 14px;
-    top: 33px;
+    top: 0px;
     right: 0px;
     background-color: #1E1E1E;
 `

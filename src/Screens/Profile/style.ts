@@ -10,24 +10,25 @@ export const ProfileView = styled.View`
   justify-content: space-between;
   align-items: center;
 
-  margin: 20px 0px 40px 0px;
+  margin: 20px 0px 60px 0px;
 `
 
 export const TextNameUser = styled.Text`
   color: #1E1E1E;
   font-size: 20px;
-  font-weight: 800;
+  font-weight: 700;
 ` 
 
 export const ListInfoUser = styled.View`
   flex-direction: column;
+  align-items: end;
   gap: 8px;
 `
 
 export const Info = styled.View`
   flex-direction: row;
   align-items: center;
-  gap: 4px;
+  gap: 14px;
 `
 export const Text = styled.Text`
   color: #1E1E1E;
@@ -38,16 +39,13 @@ export const Text = styled.Text`
 export const ConteinerImage = styled.View`
   flex-direction: column;
   align-items: center;
-  width: 165px;
-  height: 165px;
-  border-radius: 100px;
-  background-color: #000;
 `
 
 
 export const TextView = styled.View`
   flex-direction: row;
   align-items: center;
+  margin: 0px 0px 12px 0px;
   gap: 6;
 `
 export const TextH2 = styled.Text`

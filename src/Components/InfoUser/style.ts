@@ -18,7 +18,7 @@ export const Profile = styled.View`
 export const TextName = styled.Text`
   font-size: 20px;
   font-weight: 800;
-  color: #716B6B;
+  color: #d9d9d9;
   margin-bottom: 45px;
 `;
 
@@ -37,7 +37,7 @@ export const Infos = styled.View`
 `;
 
 export const TextInfo = styled.Text`
-  color: #716B6B;
+  color: #d9d9d9;
   font-size: 17px;
   font-weight: 400;
 `;

@@ -1,5 +1,6 @@
 import axios from 'axios';
 import IInfoUserProfile from '../Interfaces/InfoUserProfile';
+
 const getInfoProfile = async (username: string | undefined) => {
     try {
         const response = await axios.get(`https://api.github.com/users/${username}`);
