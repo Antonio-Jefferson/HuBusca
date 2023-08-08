@@ -16,31 +16,36 @@ interface DataUserProps {
 }
 
 export default function SearchUser({ setDataUser }: DataUserProps) {
-    const dispatch = useDispatch();
-    const [username, setUsername] = useState('');
+  const dispatch = useDispatch();
+  const [username, setUsername] = useState('');
 
-    const getUserInfo = async () => {
-       const data = await getUser(username)
-       setDataUser(data)
-       await addUserToLocalStorage(data)
-       const userStoreData: UserStore = {
-        username: data?.login,
-      };
-      dispatch(setUserAction(userStoreData));
-    }
+  const getUserInfo = async () => {
+    const data = await getUser(username);
+    setDataUser(data);
+    await addUserToLocalStorage(data);
+    const userStoreData: UserStore = {
+      username: data?.login,
+    };
+    dispatch(setUserAction(userStoreData));
+  };
 
-    return (
-        <S.Container>
-            <S.SearchInput
-                placeholder="Pesquisar usuário..."
-                onChangeText={text => setUsername(text)} 
-                value={username} 
-            />
-            <S.IconSearch>
-                <TouchableOpacity onPress={getUserInfo}>
-                    <FontAwesome5 name="search" size={24} color="#716B6B" />
-                </TouchableOpacity>
-            </S.IconSearch>
-        </S.Container>
-    );
+  const handleSearchSubmit = () => {
+    getUserInfo();
+  };
+
+  return (
+    <S.Container>
+      <S.SearchInput
+        placeholder="Pesquisar usuário..."
+        onChangeText={(text) => setUsername(text)}
+        value={username}
+        onSubmitEditing={handleSearchSubmit}
+      />
+      <S.IconSearch>
+        <TouchableOpacity onPress={getUserInfo}>
+          <FontAwesome5 name="search" size={24} color="#716B6B" />
+        </TouchableOpacity>
+      </S.IconSearch>
+    </S.Container>
+  );
 }

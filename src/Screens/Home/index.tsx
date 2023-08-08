@@ -11,8 +11,8 @@ export default function Home(){
     return (
         <Container>
             <StatusBar
-                backgroundColor={'#d9d9d9'}
-                barStyle={"dark-content"}
+                backgroundColor={'#000000'}
+                barStyle={"light-content"}
             />
            <Header/>
            <Main/>
