@@ -20,5 +20,5 @@
         <li>Menu de Usuários Pesquisados Recentemente: Um menu será criado para exibir todos os usuários do GitHub pesquisados recentemente. Cada entrada no menu apresentará os mesmos dados padrão da busca na tela principal. Ao clicar em um usuário no menu, um perfil detalhado semelhante ao descrito anteriormente será exibido, incluindo informações mais detalhadas e a lista de repositórios.</li>
     </ul>
     <h2>Download</h2>
-    <p>Baixe o aplicativo HuBusca agora mesmo e comece a descobrir perfis de desenvolvedores e explorar seus repositórios de forma simples e eficaz! <a href="https://expo.dev/artifacts/eas/2gFzqdh8tRb2WEWEUbMfHN.apk">Clique aqui</a> para fazer o download do APK.</p>
+    <p>Baixe o aplicativo HuBusca agora mesmo e comece a descobrir perfis de desenvolvedores e explorar seus repositórios de forma simples e eficaz! <a href="https://expo.dev/artifacts/eas/6ex7HstKuS8Yy6hhiriwVr.apk">Clique aqui</a> para fazer o download do APK.</p>
 </html>
